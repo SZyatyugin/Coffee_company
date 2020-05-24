@@ -1,0 +1,57 @@
+.img{
+    background-image: url(image/Screenshots_world.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40em;
+    margin-top: 3%;
+}
+
+.assortment_section div{
+   float:left;
+   width: 28%;
+   margin-left: 5%;
+}
+.assortment_section p{
+    text-align: center;
+}
+.assortment_section img{
+    width: 100%;
+}
+.sec_form{
+      float:left;  
+    margin: 0 40% 5% 40%;
+    
+}
+input[name=quantity]{
+    width: 3em;
+    float: left;
+    height: 2em;
+}
+.sec_form input, select{
+    margin-top: 10 px;
+    height: 20px;
+    display: block;
+    float: right;
+    margin-left: 20px;
+}
+
+form[name=form] p {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+form[name=form] button{
+    border-radius: 1em;
+    padding: 1em;
+    background-color: grey;
+}
+
+.footer{
+    clear: both;
+}
+.error{
+    visibility: visible;
+}
+.valid{
+    visibility: hidden;
+}

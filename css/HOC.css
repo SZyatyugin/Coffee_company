@@ -1,0 +1,46 @@
+@font-face{
+    font-family:Raleway-Medium;
+    src: url(fonts/Raleway-Medium.ttf);
+    font-family: Raleway-Bold;
+    src: url(fonts/Raleway-Bold.ttf);
+    font-family: Raleway-SemiBold;
+    src: url(fonts/Raleway-SemiBold.ttf);
+}
+.hoc_main_sec p img{
+float: left;
+}
+.hoc_main_sec_left{
+    float: left;
+    width:20%;
+}
+.hoc_main_sec_left img{
+    width: 100%;
+    margin-bottom: 70%;
+}
+.hoc_main_sec_left :last-child{
+margin-bottom: 5%;
+}
+
+.hoc_main_sec_right{
+    float: right;
+    width: 20%;
+}
+.hoc_main_sec_right img{
+    width: 100%;
+    margin-bottom: 70%;
+}
+.hoc_main_sec_right :last-child{
+    margin-bottom: 5%;
+}
+.hoc_main_sec{
+    width: 56%;
+    float: left;
+    margin:0 2% 0 2%;
+    font-family: Raleway-SemiBold;
+}
+.main_section{
+    background-image: url(/css/image/bg_image.jpg);
+}
+.main_section :last-child{
+    clear: both;
+}

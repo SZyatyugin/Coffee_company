@@ -1,0 +1,70 @@
+@font-face {
+    font-family:Raleway-Light;
+    src: url(fonts/Raleway-Light.ttf);
+    font-family: Raleway-Medium;
+    src: url(/css/fonts/Raleway-Medium.ttf);
+}
+
+body{
+    background-size: cover;
+    background-color: aliceblue;
+   font-family:Raleway-Light;
+    width: 100%;
+}
+.basic_header_div{
+    width: 100%;
+    background-image: url(image/bubbles.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 12em;
+
+}
+.basic_header_div :first-child {
+   margin: 2% 0 0 35%;
+   
+    
+}
+.basic_header_div :last-child{
+    float: right;
+    width: 10%;
+}
+.basic_nav>ul{
+    margin:15px;
+   float: left;
+   padding: 4px;
+   width: 100%;
+   
+}
+.basic_nav li:hover{
+    background-color:grey;
+    
+}
+.basic_nav li{
+    display: inline;
+    list-style-type: none;
+    border-radius: 5%;
+    padding: 1em;
+    margin-left: 10%;
+    
+    
+}
+.basic_nav a{
+    color: black;
+    border-radius: 40%;
+    padding:1em;
+    text-decoration: none;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.footer{
+    background-image: url(/css/image/whats-on-a-bag.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1% 5% 5% 25%;
+    color:white;
+    font-size: 1.2em;
+}
+.footer a{
+    color: grey;
+}
+
+

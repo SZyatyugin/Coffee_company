@@ -1,0 +1,23 @@
+.AOC_sec_center{
+    margin: 0 auto;
+}
+.AOC_sec_center div{
+float: left;
+width: 20%;
+
+margin-left: 3%;
+}
+.AOC_sec_center img{
+   width: 100%;
+   height: 15em;
+}
+
+.AOC_sec{
+    clear: both;
+    margin: 0 15% 0 15%;
+    text-align: justify;
+}
+.AOC_sec_right{
+    float: right;
+
+}

@@ -4,92 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorts of coffee</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css\main.css">
+    <link rel="stylesheet" href="css\assortment.css">
 </head>
 <body>
-    <header class="assortment_basic_header_div">
-        <h1>About our company</h1>
-        <img src="image/WTC+Logo.png" alt="">
+    <header class="basic_header_div">
+    <img src="css/image/logo2.webp" alt="">
+    <img src="css/image/WTC+Logo.png" alt="">
       </header>
-      <nav class="assortment_basic_nav"> 
+      <nav class="basic_nav"> 
         <ul>
           <li><a href="About_our_company.html">About our company</a></li>
-          <li><a href="main.html">About Coffee</a></li>
-          <li><a href="sorts_of_coffee.html">Sorts of Coffee</a></li>
+          <li><a href="history_of_coffee.html">About Coffee</a></li>
+          <li><a href="Assortment.html">Sorts of Coffee</a></li>
           <li><a href="contacts.html">Contacts</a></li>
         </ul>
     </nav>
-<section class="assortment_section"> 
-    <img src="image\screenshots_world.png" alt="" usemap="#coffee map"/>
-    <map name="coffee map">
-        <area target="_self" alt="Africa" title="Africa" href="" coords="466,280,506,229,639,299,563,405,532,322,507,308" shape="poly">
-        <area target="_self" alt="South_Africa" title="South Africa" href="" coords="302,311,346,289,405,328,390,375,364,415,346,456,356,476,327,473,320,371" shape="poly">
-        <area target="_self" alt="Asia" title="Asia" href="Asia.html" coords="642,278,654,318,650,368,645,418,683,440,726,467,793,466,864,482,966,419,941,186" shape="poly">
-    </map>
-    <table border="1" cellpadding="10" cellspacing="0">
-        <caption>Main exporters by country</caption>
-        <thead>
-            <tr>
-            <td>country</td>
-            <td>60 kilograms bags</td>
-            <td>Metric tons</td>
-            <td>Pounds</td>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>Brazil</td>
-            <td>44,200,000</td>
-            <td>2,652,000</td>
-            <td>5,714,381,000</td>
-        </tr>
-        <tr>
-            <td>Vietnam</td>
-            <td>27,500,000</td>
-            <td>1,650,000</td>
-            <td>3,637,627,000</td>
-        </tr>
-        <tr>
-        <td>Colombia</td>
-        <td>13,500,000</td>
-        <td>810,000</td>
-        <td>1,785,744,000</td>
-    </tr>
-</tbody>
-    </table>
-</section>
-<aside class="assortment_aside">
-    <form action="">
-        <fieldset>
-            <label for="Choose">Choose</label>
-            <select id="Choose" name="Choose">
-            <option value="Choose" disabled>Choose</option>
-            <option value="Mr">Mr</option>
-            <option value="Mrs">Mrs</option>
-            <option value="Miss">Miss</option>
-            <option value="Ms">Ms</option>
-        </select>
-            <label for="Name">Name</label>
-            <input type="text" id="Name">
-            <label for="Surname">Surname</label>
-            <input type="text" id="Surname">
-            <label for="phone">Phone</label>
-            <input type="number" id="phone">
-            <label for="City">City</label>
-            <input type="text" id="City">
-            <label for="Address">Address</label>
-            <input type="text">
-            <button value="Submit">Submit</button>
+    <div class="img">
+    </div>
+  <div class="main_section">  
+<div class="assortment_section">
+        <div>
+            <img src="/css/image/1fd6fc16d38ebc96bb2eab906f74e1ae-400x400-c-center.png" alt="" value=35 id="fidelity">
+            <p>HI Fidelity Blend</p>
+            <p>Rich caramel&floral highlights with velvety body</p>
+            <p>Price: 35$</p>
+            <input type="number"min=0 name="quantity" price=35  id="fidelity_quantity">
+             <div>Total value: <span name="fidelity_quantity"></span></div> 
+        </div>
+        <div>
+        <img src="/css/image/9859b68f5c4ce7733470afb4410279b2-400x400-c-center.png" alt="" value=45 id="tightrope">
+        <p>Tightrope Blend</p>
+        <p>Sweet fragrance, juicy&fruit forward</p>
+        <p>Price: 45$</p>
+        <input type="number"min=0 name="quantity" price=45 id="tightrope_quantity"> 
+        <div>Total value: <span name="tightrope_quantity"></span></div>
+        </div>
+      <div>
+        <img src="/css/image/9998b8204f3282f64db124bee8f29ceb-400x400-c-center.png" alt="" value=56 id="crompton">
+      <p>Crompton Road Blend</p>
+      <p>Balanced with chocolate flavours&heavy body</p>
+       <p>Price: 56$</p>
+       <input type="number" min=0 name="quantity" price=56 id="crompton_quantity">
+       <div>Total value: <span name="crompton_quantity"></span></div>
+    </div>
+</div>
+</div>
+<div class="sec_form">
+    <form action="" method="get" name="form" id="formToCheck">
+     
+   <p>Name<input type="text" id="name" data-val="[A-za-z]" data-val-id="wrongName" data-val-msg="Type in correct name"></p><br>
+   <div id="wrongName"></div>
+    <p>Surname<input type="text" id="surname"data-val="[A-za-z]" data-val-id="wrongSurname" data-val-msg="Type in correct surname"></p><br>
+    <div id="wrongSurname" ></div>
+    <p>e-mail<input type="text" id="e-mail"data-val="\b[A-Za-z0-9_.]+@[a-z0-9.-]+\.[a-z]{2,4}\b" data-val-id="wrongMail" data-val-msg="Type in correct mail"></p><br>
+    <div id="wrongMail"></div>
+    <p>Phone<input type="text" id="phone" placeholder="ex. +38(0XX)XXX+XX+XX" data-val="\+38\(\d{3}\)\d{3}-\d{2}-\d{2}" data-val-id="wrongPhone" data-val-msg="Type in correct phone number"></p><br>
+    <div id="wrongPhone"></div>
+    <p>City<input type="text" id="city" data-val="[A-za-z]" data-val-id="wrongCity" data-val-msg="Type in correct City"></p><br>
+    <div id="wrongCity"></div>
+   <p>Address<input type="text"id="address" data-val="[A-za-z]" data-val-id="wrongAddress" data-val-msg="Type in correct Address"></p><br>
+   <div id="wrongAddress"></div>
+   <p>The total sum&nbsp;<span id="res">0$</span></p>
+   <button type="submit">Submit</button>
+</form>
+</div>
+<div></div>
+<footer class="footer">
+    <div> Visit our website <a href="http:\\www.wordcoffeecompany.com">http:\\www.wordcoffeecompany.com</a></div>
+  <div>If you have some questions,send us an email <a href="mailto:info@worldcoffeecompany.com">info@worldcoffeecompany.com</a></div>
+  <div>or you can just call us <a href="tel:+7777777">+7777777</a></div>
+</footer>
 
-
-        </fieldset>
-    </form>
-</aside>
-    
-
-   
-    <footer>
-
-    </footer>
+<script src="assortment.js"></script>
 </body>
 </html>

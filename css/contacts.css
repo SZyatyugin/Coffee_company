@@ -1,0 +1,21 @@
+@font-face{
+    font-family:Raleway-ExtraBold;
+    src: url(/css/fonts/Raleway-ExtraBold.ttf);
+    font-family: Raleway-ThinItalic;
+    src: url(/css/fonts/Raleway-ThinItalic.ttf);
+}
+#contacts{
+    
+    font-family:Raleway-ExtraBold;
+    font-size: 1.5em;
+    margin-top: 15%;
+    text-align: center;
+}
+blockquote, q{
+    font-family: Raleway-ThinItalic;
+    font-size: 1.5em;
+    color: black;
+}
+q{
+    margin-left: 5em;
+}
