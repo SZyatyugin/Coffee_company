@@ -1,6 +1,5 @@
 window.onload=function(){
-    var img=new Image();
-    img.src="img url";
+    
     var quantity=document.getElementsByName("quantity");
     var totalValue=document.getElementById("res");
     var formToCheck=document.getElementById("formToCheck");
@@ -76,7 +75,7 @@ totalValue.innerHTML=0+"$";
             var valid=false;
             for (i=0;i<formToCheck.elements.length;i++){
                 var e=formToCheck.elements[i];
-                if(e.type="text"&& e.onchange!=null){
+                if(e.type=="text"&& e.onchange!=null){
                     e.onchange();
                     if(e.className=="error"){
                         valid=true;
@@ -91,9 +90,11 @@ totalValue.innerHTML=0+"$";
                 }
             }
         }
-        function setCookie(name,value){
-            document.cookie=name+"="+value+";";
+        function setCookie(name,val){
+            document.cookie=name+"="+val+";"
         }
+            
+        
     }
 
     
