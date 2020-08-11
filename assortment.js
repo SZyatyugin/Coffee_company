@@ -4,17 +4,17 @@ window.onload=function(){
     var totalValue=document.getElementById("res");
     var formToCheck=document.getElementById("formToCheck");
     for (i=0;i<quantity.length;i++){
-        var e=quantity[i];
-        e.addEventListener('change', getQuantityValue,false);
-        e.addEventListener('change', getTotalSum,false);
+        var q=quantity[i];
+        q.addEventListener('change', getQuantityValue,false);
+        q.addEventListener('change', getTotalSum,false);
         }
         
         
-        function getQuantityValue(){
+        function getQuantityValue(e){
             var res;
             var spanArray=document.getElementsByTagName("span");
-            var q=parseInt(this.value);
-            var p=parseInt(this.getAttribute("price"));
+            var q=parseInt(e.currentTarget.value);
+            var p=parseInt(e.currentTarget.getAttribute("price"));
             var n=this.getAttribute("id");
             res=q*p;
             for (i=0;i<spanArray.length;i++){
